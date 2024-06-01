@@ -5,7 +5,7 @@
 3 => null
 4 => undefined 
 5 => bigint 
+6 => boolean
 
-
-6 => object
+7 => object
 */
