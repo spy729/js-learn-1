@@ -8,7 +8,7 @@
 
 let name1 = "rishi agarwal"
 let name2 = name1;
-name2 = "kc"
+name2 = "changed name"
 console.log(name1);
 console.log(name2)
 
@@ -18,6 +18,6 @@ let student1 = {
 }
 
 let student2 = student1;
-student2.name = "kk"
+student2.name = "changed name"
 console.log(student1.name);
 console.log(student2.name)
