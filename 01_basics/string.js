@@ -14,7 +14,7 @@ console.log(name.toUpperCase());
 // we have to give stirng in argument 
 console.log(name.indexOf('r'))
 
-// for substring we have two methods substring(simple substring using two indices) and slice(it can take negative values and starts from backwords when negative are given) 
+// for substring we have two methods for substrings of string substring(simple substring using two indices) and slice(it can take negative values and starts from backwords when negative are given) 
 name = "agarwal rishi"
 console.log(name.substring(0,4))
 console.log(name.slice(-8,12))
