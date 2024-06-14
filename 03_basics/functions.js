@@ -44,3 +44,4 @@ function objectHandler(anyobject){
 
 objectHandler(user);
 // similarly we can pass array in it
+
