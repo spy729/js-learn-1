@@ -6,7 +6,10 @@ const student = {
     branch: "cse", 
     email: "rishi@gmail.com",
     isLoggedIn: false, 
-    lastLogginDays: [ "Monday" , "Tuesday"]
+    lastLogginDays: [ "Monday" , "Tuesday"],
+    welcome: function(){
+
+    }
 }
 
 console.log(student)
@@ -25,9 +28,12 @@ console.log(student["email"])
 student.allowance = function(){
     console.log("hello you are welcome");
 }
-console.log(student.allowance);
+// console.log(student.allowance());
 
 student.welcome = function() {
     console.log(`hello everyone he is ${this.name} lets welcome to our society`)
-}
-console.log("student[welcome]);
+};
+console.log(student["welcome"]());
+// console.log("student[welcome]);
+// student.welcome();
+student.welcome(); 
