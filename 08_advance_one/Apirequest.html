@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello to my webpage </h1>
+    <button class="data">Get Data</button>
+    <div class="image">
+
+    </div>
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/spy729"
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET" , requestUrl)
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4 ){
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            // console.log(data.following)
+            document.querySelector(".data").addEventListener("click" , function() {
+                document.querySelector("h1").innerHTML = `My Name is ${data.name}`
+                document.querySelector(".image").innerHTML = `<img src="${data.avatar_url}">`
+            })
+        }
+    }
+    xhr.send()
+</script>
+</html>
